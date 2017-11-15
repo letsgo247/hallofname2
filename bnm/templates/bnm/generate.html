@@ -1,0 +1,139 @@
+{% extends "bnm/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+{# 메인 페이지#}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="bnm">
+    <div class="my-auto" style="text-align:center;">
+
+        <h2 class="m-3 p-3">Band name <span class="text-warning">Generator</span> </h2>
+
+        <div class="card-deck m-3">
+
+
+            {# CARD1#}
+            <div class="card border-0 py-3">
+                <div class="card p-0 m-0
+                border-0
+                " style="min-height:250px; display: flex;  flex-direction: column; justify-content: center;">
+                    <h4 class="card-title my-3 p-0" style="z-index:2;">{{이름1}}</h4>
+
+                    <div class="" style="background: url({% static 'bnm/img/randombox.png' %}); background-size:cover; position:absolute; width:100%; height:100%; z-index:1; filter:grayscale(0%) blur(10px) opacity(50%);"> </div>
+                </div>
+
+                <div class="card-footer border">
+
+                    <!-- Rating Stars Box -->
+                    <section class='rating-widget'>
+                      <div class='rating-stars text-center'>
+                        <ul id='stars' class="mb-0">
+                          <li class='star' title='Poor' data-value='1'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Fair' data-value='2'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Good' data-value='3'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Excellent' data-value='4'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='WOW!!!' data-value='5'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+
+                </div>
+            </div>
+
+
+
+            {# CARD2#}
+            <div class="card border-0 py-3">
+                <div class="card p-0 m-0
+                border-0
+                " style="min-height:250px; display: flex;  flex-direction: column; justify-content: center;">
+                    <h4 class="card-title my-3 p-0" style="z-index:2;">{{이름2}}</h4>
+
+                    <div class="" style="background: url({% static 'bnm/img/randombox.png' %}); background-size:cover; position:absolute; width:100%; height:100%; z-index:1; filter:grayscale(0%) blur(10px) opacity(50%);"> </div>
+                </div>
+
+                <div class="card-footer border">
+
+                    <!-- Rating Stars Box -->
+                    <section class='rating-widget'>
+                      <div class='rating-stars text-center'>
+                        <ul id='stars' class="mb-0">
+                          <li class='star' title='Poor' data-value='1'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Fair' data-value='2'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Good' data-value='3'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Excellent' data-value='4'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='WOW!!!' data-value='5'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+
+                </div>
+            </div>
+
+
+            {# CARD3#}
+            <div class="card border-0 py-3">
+                <div class="card p-0 m-0
+                border-0
+                " style="min-height:250px; display: flex;  flex-direction: column; justify-content: center;">
+                    <h4 class="card-title my-3 p-0" style="z-index:2;">{{이름3}}</h4>
+
+                    <div class="" style="background: url({% static 'bnm/img/randombox.png' %}); background-size:cover; position:absolute; width:100%; height:100%; z-index:1; filter:grayscale(0%) blur(10px) opacity(50%);"> </div>
+                </div>
+
+                <div class="card-footer border">
+
+                    <!-- Rating Stars Box -->
+                    <section class='rating-widget'>
+                      <div class='rating-stars text-center'>
+                        <ul id='stars' class="mb-0">
+                          <li class='star' title='Poor' data-value='1'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Fair' data-value='2'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Good' data-value='3'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='Excellent' data-value='4'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                          <li class='star' title='WOW!!!' data-value='5'>
+                            <i class='fa fa-star fa-fw'></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+
+                </div>
+            </div>
+
+
+        </div>
+
+            <a href="/generate"><button type="button" class="btn btn-warning btn-lg m-3">re-Generate!</button></a>
+
+    </div>
+
+</section>
+{% endblock %}
