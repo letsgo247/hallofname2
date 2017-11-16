@@ -14,26 +14,6 @@ import re
 
 # Create your views here.
 def index(request):
-
-    # def replace1():
-    #     단어들 = 사전.objects.filter(Q(id__gte=20))
-    #     for 단어 in 단어들:
-    #         print(단어.단어)
-    #         단어.출처='자주쓰는한국어낱말'
-    #         단어.save()
-    #
-    # def replace2():
-    #     단어들 = 사전.objects.filter(id__gt=3721)
-    #     print(len(단어들))
-    #     for 단어 in 단어들:
-    #         단어.delete()
-    #
-    # def archive():
-    #     p = re.compile('.+적$')
-    #     m = p.match(단어.단어)
-    #     단어.save()
-    # replace1()
-
     return render(request, 'bnm/index.html')
 
 
@@ -109,7 +89,7 @@ def generate(request):
     selected_algorithms = 알고리즘선택기()
     algorithms = Algorithm.objects.all()
     내용들=[]
-    print(selected_algorithms)
+    # print(selected_algorithms)
 
     for i in range(3):
         for algorithm in algorithms:
