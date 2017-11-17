@@ -8,10 +8,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="letsgo247">
-    <meta name="keywords" content="​밴드 이름 짓기, 밴드 이름 짓기 어플, 밴드 이름 생성기, 모임 이름 생성기, 모임 이름 짓기, 프로젝트 이름, 이름 짓기, 랜덤 이름 짓기">
+    <meta name="keywords" content="​밴드 이름 생성기, 밴드 이름 짓기 어플, 밴드 이름 짓기, 모임 이름 생성기, 모임 이름 짓기, 프로젝트 이름, 랜덤 이름 짓기, 랜덤 이름 생성기">
     <meta name="description" content="밴드 이름 짓기 어플리케이션입니다. 랜덤으로 밴드 이름을 생성해주는 알고리즘으로, 음악적 영감과 흥미로운 자극을 제공합니다.">
 
-    <title>밴드 이름 짓기 - LETSGO247</title>
+    <title>밴드 이름 생성기 - LETSGO247</title>
     <link rel="shortcut icon" href="{% static 'bnm/img/favicon.png' %}">
 
     <!-- Bootstrap core CSS -->
@@ -71,8 +71,8 @@
         {# 네이게이션 바#}
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top" id="sideNav">
 
-            <a class="navbar-brand js-scroll-trigger" href="..">
-              <span class="d-block d-lg-none">밴드 이름 짓기</span>
+            <a class="navbar-brand js-scroll-trigger" href="..#bnm">
+              <span class="d-block d-lg-none">밴드 이름 생성기</span>
               <span class="d-none d-lg-block">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'bnm/img/randombox.png' %}" alt="">
               </span>
@@ -100,7 +100,6 @@
 
 
     <div class="container-fluid p-0">
-
 
         {# 메인 페이지#}
 
@@ -136,11 +135,12 @@
 
 
       {# About 페이지#}
-        <section class="resume-section p-5 p-lg-5 d-flex d-column" id="about">
+        <section class="resume-section p-3 p-md-5 d-flex d-column" id="about" style="
+    padding-bottom: 40px!important;">
             <div class="my-auto">
                 <h2 class="mb-5 text-center">소개 <span class="text-warning">About</span> </h2>
 
-                <div class="my-5 py-5">
+                <div class="my-5 py-3">
                     <h3>배경</h3>
                     <hr>
                     <p>밴드를 만들 때 가장 먼저 하는 일은 밴드 이름을 정하는 것입니다. '시작이 반'이라며 생생한 열정을 가지고 머리를 맞대보지만, 멤버 모두의 취향을 만족시키는 이름을 뽑아내는 것은 쉬운 일이 아니죠.</p>
@@ -156,7 +156,7 @@
                     소위 '죽이는' 밴드 이름을 찾기 위해 수많은 창작의 고통을 겪으면서 '밴드 이름 짓는 어플이 있으면 참 좋겠다' 라는 생각을 하지 않을 수 없었고, 마침내 생활 개발자로서 이렇게 결과물을 내놓게 되었습니다.
                 </div>
 
-                <div class="my-5 py-5">
+                <div class="my-5 py-3">
                     <h3>사용법</h3>
                     <hr>
                     <p>밴드의 멤버, 성향, 스타일 등에 대한 정보 없이 랜덤으로 생성되는 이름이기 때문에 당연히 완벽할 수는 없을 것이라고 생각합니다.</p>
@@ -166,8 +166,8 @@
                     <p>사용하시면서 피드백이나 의견 있으시면 제 <a href="http://letsgo247.net/guest.html">홈페이지</a>나 <a href="mailto:letsgo247@hanmail.net">이메일</a>을 통해 글 남겨주시면 감사하겠습니다! (제 기술이 허락하는 한도 내에서) 개선이나 반영의 여지가 항상 있으니 좋은 의견 많이 남겨주시기 바랍니다.</p>
                 </div>
 
-                <div class="mt-5 py-5">
-                    <h3>밴드 이름 짓기 팁</h3>
+                <div class="mt-5 py-3">
+                    <h3>부록: 밴드 이름 짓기 팁</h3>
                     <hr>
                     <p>마지막으로 밴드 이름을 짓는 데에 도움이 될 만한 몇 가지 팁을 공유하도록 할게요. (외국 사이트에 올라온 글을 간단하게 번역한 글입니다. <a href="https://www.bandnamemaker.com/tips" class="text-primary">출처</a>)</p>
                     <h1 class="text-center my-5"><i class="fa fa-bookmark" aria-hidden="true"></i></h1>
